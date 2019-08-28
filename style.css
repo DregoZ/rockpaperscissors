@@ -1,0 +1,103 @@
+body {
+  background-image: linear-gradient(to bottom, rgba(137, 126, 214, 0), darkblue);
+    
+}
+
+h1 {
+    font-family: 'Condiment', cursive;
+    color: rgb(195, 0, 255);
+    font-size: 48px;
+}
+
+.title {
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    border-color: black;
+    padding: 0px 40px;
+}
+
+.score {
+    width: 700px;
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    border-color: black;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.score div {
+    border-style: solid;
+    border-color: black;
+    width: 20%;
+}
+
+.buttons {
+    width: 700px;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    flex-direction: row;
+    
+}
+.buttons .icons {
+    
+    position: relative;
+    margin: 0 auto;
+
+}
+
+.buttons .icons span {
+    color: rgb(216, 92, 253);
+
+}
+
+.buttons .icons span:hover {
+    color: white;
+}
+
+
+
+
+/*****
+.buttons button {
+    padding: 30px;
+    margin: 10px;
+    border-radius: 50%;
+    border-color: black;
+    border-style: solid;
+    border-width: 0px;
+    background-color: white;
+    transition: background-color 2s;
+}
+
+.buttons button:hover {
+    border-width: 6px;
+    padding: 24px;
+    background-color: rgb(196, 250, 160);
+}
+
+.buttons button:focus {
+    outline-width: 0;
+    border-width: 6px;
+    border-color: rgb(225, 0, 255);
+    background-color: rgb(196, 250, 160);
+    padding: 24px;
+}
