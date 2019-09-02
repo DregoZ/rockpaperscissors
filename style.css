@@ -1,103 +1,146 @@
 body {
-  background-image: linear-gradient(to bottom, rgba(137, 126, 214, 0), darkblue);
-    
+    background-image: linear-gradient(to bottom, rgb(189, 102, 45), darkblue);
 }
 
-h1 {
-    font-family: 'Condiment', cursive;
-    color: rgb(195, 0, 255);
-    font-size: 48px;
-}
+
 
 .title {
-    margin: 0;
+    text-align: center;
+    width: 700px;
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    border-style: solid;
-    border-color: black;
-    padding: 0px 40px;
+   /* border-style: solid;
+    border-color: black;*/
+}
+
+.title p {
+    font-family: 'Sigmar One', cursive;
+    font-size: 24px;
+    top: 10%;
+}
+
+.title h1 {
+    font-family: 'Sigmar One', cursive;
+    color: rgb(181, 255, 239);
+    font-size: 48px;
+    line-height: 48px;   
 }
 
 .score {
     width: 700px;
-    margin: 0;
     position: absolute;
-    top: 20%;
+    top: 40%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    border-style: solid;
-    border-color: black;
+ /*   border-style: solid;
+    border-color: black;*/
     padding: 0px 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-family: 'Sigmar One', cursive; 
 }
 
 .score div {
+    height: 100px;
+    /*
     border-style: solid;
-    border-color: black;
-    width: 20%;
+    border-color: black;*/
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 26px;
+
 }
+
+/* centered divs */
 
 .buttons {
     width: 700px;
     margin: 0;
     position: absolute;
-    top: 60%;
+    top: 80%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    border-style: solid;
-    border-color: black;
+   /* border-style: solid;
+    border-color: black;*/
     display: flex;
     flex-direction: row;
-    
+   
 }
-.buttons .icons {
-    
+
+.buttons .play-button {
     position: relative;
     margin: 0 auto;
-
 }
 
-.buttons .icons span {
-    color: rgb(216, 92, 253);
-
+.buttons .play-button button {
+    vertical-align: middle;
+    width: 300px;
+    height: 100px;
+    border-radius: 25px;
+    padding: 0px;
+    margin: 10px;
+    border-style: solid;
+    border-width: 2px;
+    background-image: linear-gradient(to top, blue, rgb(220, 30, 245), rgb(100, 100, 100));
+    border-color: black;
+    font-family: 'Sigmar One', cursive; 
+    color: rgb(181, 255, 239);
+    font-size: 22px;
 }
 
-.buttons .icons span:hover {
+.buttons .icons {
+    position: relative;
+    margin: 0 auto;
+}
+
+
+
+.buttons .icons button {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 0px;
+    margin: 10px;
+    border-style: solid;
+    border-width: 2px;
+    background-image: linear-gradient(to top, blue, rgb(220, 30, 245), rgb(100, 100, 100));
+    border-color: black;
+}
+
+.button-text {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.buttons .icons button:hover, .buttons .play-button button:hover  {
+    border-color: white;
+    color: white;
+    background-image: linear-gradient(to bottom, blue, rgb(220, 30, 245), rgb(100, 100, 100));
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(94, 221, 43, 0.397), 0 17px 50px 0 rgba(240, 243, 46, 0.19);
+}
+
+.buttons .icons button:active, .buttons .play-button button:active {
+    transform: translateY(4px);
+}
+
+.buttons .icons button:focus, .buttons .play-button button:focus {
+    outline-width: 0;
+    border-width: 4px;
+    padding: 26px;
+    margin: 10px;
+    background-image: linear-gradient(to bottom, blue, rgb(220, 30, 245), rgb(100, 100, 100));
+    box-shadow: 0 12px 16px 0 rgba(94, 221, 43, 0.397), 0 17px 50px 0 rgba(240, 243, 46, 0.19);
+    border-color: white;
     color: white;
 }
 
-
-
-
-/*****
-.buttons button {
-    padding: 30px;
-    margin: 10px;
-    border-radius: 50%;
-    border-color: black;
-    border-style: solid;
-    border-width: 0px;
-    background-color: white;
-    transition: background-color 2s;
-}
-
-.buttons button:hover {
-    border-width: 6px;
-    padding: 24px;
-    background-color: rgb(196, 250, 160);
-}
-
-.buttons button:focus {
-    outline-width: 0;
-    border-width: 6px;
-    border-color: rgb(225, 0, 255);
-    background-color: rgb(196, 250, 160);
-    padding: 24px;
-}

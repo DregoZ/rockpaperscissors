@@ -2,9 +2,10 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Condiment&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d51dece90d.js"></script>
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -12,13 +13,16 @@
         <div class="title">
 
             <h1>
-                ROCK PAPER SCISSORS
+                Rock <br>
+                Paper<br>
+                Scissors
             </h1>
+            <p>Nobody blink! It's a first to 5!</p>
         </div>
         <div class="score">
-            <div class="player-score">P1: 0</div>
-            <div class="cpu-score">CPU: 0</div>
-            <div class="ties-score">TIE: 0</div>
+            <div class="player-score">P1<div id="p1score">0</div> </div>
+            <div class="cpu-score">CPU<div id="cpuscore">0</div></div>
+            <div class="ties-score">TIE<div id="tiescore">0</div></div>
         </div>
 
         <div class="play-area">
@@ -27,28 +31,21 @@
         </div>
 
         <div class="buttons">
-            <div class="icons">
-            <span class="fa-stack fa-3x">
-                <i class="fa fa-circle-thin fa-stack-2x"></i>
-                <i class="far fa-hand-rock fa-stack-1x"></i>
-            </span>
-            <span class="fa-stack fa-3x">
-                <i class="fa fa-circle-thin fa-stack-2x"></i>
-                <i class="far fa-hand-paper fa-stack-1x"></i>
-            </span>
-            <span class="fa-stack fa-3x">
-                <i class="fa fa-circle-thin fa-stack-2x"></i>
-                <i class="far fa-hand-scissors fa-stack-1x"></i>
-            </span>
-        </div>
+                <div id="play-area" class="play-button">
+                    <button onclick="TooglePlay()" id="play">Play!</button>
+                </div>
+                
 
-            <!--
-            <div class="rock"><button><i class="far fa-hand-rock"></i></button></div>
-            <div class="paper"><button><i class="far fa-hand-paper"></i></button></div>
-            <div class="scissors"><button><i class="far fa-hand-scissors"></i></button></div>
-            
-            <i class="fa fa-hand-rock"></i>
-            -->
+                <div id="button-area" class="icons">
+
+                        <button id="rock"><i class="far fa-hand-rock fa-3x"></i></button>
+                        <button id="paper"><i class="far fa-hand-paper fa-3x"></i></button>
+                        <button id="scissors"><i class="far fa-hand-scissors fa-3x"></i></button>
+                        <button id="stats" class="button-text">SHOW STATS</button>
+        
+        
+                    </div>
+
         </div>
     </div>
 
