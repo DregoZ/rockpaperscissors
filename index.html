@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Condiment&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d51dece90d.js"></script>
     <script src="script.js"></script>
+    <link rel="shortcut icon" href="images/rock.png" />
 </head>
 
 <body>
@@ -20,31 +21,35 @@
             <p>Nobody blink! It's a first to 5!</p>
         </div>
         <div class="score">
-            <div class="player-score">P1<div id="p1score">0</div> </div>
-            <div class="cpu-score">CPU<div id="cpuscore">0</div></div>
-            <div class="ties-score">TIE<div id="tiescore">0</div></div>
+            <div class="player-score">P1<div id="p1score">0</div>
+            </div>
+            <div class="cpu-score">CPU<div id="cpuscore">0</div>
+            </div>
+            <div class="ties-score">TIE<div id="tiescore">0</div>
+            </div>
         </div>
 
-        <div class="play-area">
-            <div class="player-play"></div>
-            <div class="cpu-play"></div>
+        <div class="msg-area">
+            <div id="result" class="result-msg"></div>
+            <div id="play-result" class="play-resume"></div>
+
         </div>
 
         <div class="buttons">
-                <div id="play-area" class="play-button">
-                    <button onclick="TooglePlay()" id="play">Play!</button>
-                </div>
+            <div id="play-area" class="play-button">
+                <button onclick="TooglePlay()" id="play">Play!</button>
+            </div>
+
+
+            <div id="button-area" class="icons">
+
+                <button id="rock"><i class="far fa-hand-rock fa-3x"></i></button>
+                <button id="paper"><i class="far fa-hand-paper fa-3x"></i></button>
+                <button id="scissors"><i class="far fa-hand-scissors fa-3x"></i></button>
                 
 
-                <div id="button-area" class="icons">
 
-                        <button id="rock"><i class="far fa-hand-rock fa-3x"></i></button>
-                        <button id="paper"><i class="far fa-hand-paper fa-3x"></i></button>
-                        <button id="scissors"><i class="far fa-hand-scissors fa-3x"></i></button>
-                        <button id="stats" class="button-text">SHOW STATS</button>
-        
-        
-                    </div>
+            </div>
 
         </div>
     </div>

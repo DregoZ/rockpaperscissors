@@ -1,8 +1,6 @@
 body {
-    background-image: linear-gradient(to bottom, rgb(189, 102, 45), darkblue);
+    background-image: linear-gradient(to bottom, rgb(189, 102, 45), rgb(0, 0, 0));
 }
-
-
 
 .title {
     text-align: center;
@@ -12,7 +10,7 @@ body {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-   /* border-style: solid;
+    /* border-style: solid;
     border-color: black;*/
 }
 
@@ -26,7 +24,7 @@ body {
     font-family: 'Sigmar One', cursive;
     color: rgb(181, 255, 239);
     font-size: 48px;
-    line-height: 48px;   
+    line-height: 48px;
 }
 
 .score {
@@ -36,26 +34,21 @@ body {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
- /*   border-style: solid;
-    border-color: black;*/
     padding: 0px 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-family: 'Sigmar One', cursive; 
+    font-family: 'Sigmar One', cursive;
 }
 
 .score div {
     height: 100px;
-    /*
-    border-style: solid;
-    border-color: black;*/
     width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
     font-size: 26px;
-
+    color: rgb(181, 255, 239);
 }
 
 /* centered divs */
@@ -68,11 +61,8 @@ body {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-   /* border-style: solid;
-    border-color: black;*/
     display: flex;
     flex-direction: row;
-   
 }
 
 .buttons .play-button {
@@ -91,7 +81,7 @@ body {
     border-width: 2px;
     background-image: linear-gradient(to top, blue, rgb(220, 30, 245), rgb(100, 100, 100));
     border-color: black;
-    font-family: 'Sigmar One', cursive; 
+    font-family: 'Sigmar One', cursive;
     color: rgb(181, 255, 239);
     font-size: 22px;
 }
@@ -100,8 +90,6 @@ body {
     position: relative;
     margin: 0 auto;
 }
-
-
 
 .buttons .icons button {
     vertical-align: middle;
@@ -121,7 +109,7 @@ body {
     font-weight: bold;
 }
 
-.buttons .icons button:hover, .buttons .play-button button:hover  {
+.buttons .icons button:hover, .buttons .play-button button:hover {
     border-color: white;
     color: white;
     background-image: linear-gradient(to bottom, blue, rgb(220, 30, 245), rgb(100, 100, 100));
@@ -144,3 +132,31 @@ body {
     color: white;
 }
 
+.msg-area {
+    width: 700px;
+    height: 200px;
+    ;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /*border-style: solid;
+    border-color: black;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Sigmar One', cursive;
+    font-size: 70px;
+    text-align: center;
+}
+
+.msg-area .play-resume {
+    /* border-style: solid;
+    border-color: black;*/
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 24px;
+}
